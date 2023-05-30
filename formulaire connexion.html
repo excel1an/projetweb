@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> ECE In </title>
+		<script>
+    		function validateForm() {
+      			var username = document.forms["loginForm"]["username"].value;
+      			var password = document.forms["loginForm"]["password"].value;
+      
+      				if (username == "" || password == "") {
+        				alert("Veuillez remplir tous les champs !");
+       				return false;
+      			}
+    		}
+  		</script>
+		<style type="text/css">
+			.container {
+      			background-color: #0072b1;
+      			border: 2px solid #cccccc;
+      			height: 800px;
+      			color: white;
+      			padding: 20px;
+      			border-radius: 10px;
+      			text-align: center;
+    		}
+    		.image {
+    			position: relative;
+    		}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<h2> Connexion</h2>
+			<form name="Connexion" onsubmit="return valider()" action="formulaire inscription.html" 	method="POST">
+				<label for="identifiant"> Nom d'utilisateur : </label>
+				<input type="text" id="identifiant" name="identifiant" required><br><br>
+				<label for="password"> Mot de passe : </label>
+				<input type="password" id="motdepasse" name="motdepasse"required><br><br>
+				<input type="submit" formaction="Page principale.html" value="Se connecter">
+				<input type="submit" formnovalidate="formulaire inscription.html"  value="S'inscrire">
+			</form>
+			<br><br><br>
+			<img src="logo grand.png" width="300", height="150" class="image">
+		</div>
+	</body>
+</html>
