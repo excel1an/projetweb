@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<title> ECE In </title>
-		<script>
-    		function validateForm() {
-      			var username = document.forms["loginForm"]["username"].value;
-      			var password = document.forms["loginForm"]["password"].value;
-      
-      				if (username == "" || password == "") {
-        				alert("Veuillez remplir tous les champs !");
-       				return false;
-      			}
-    		}
-  		</script>
-		<style type="text/css">
-			.container {
-      			background-color: #0072b1;
-      			border: 2px solid #cccccc;
-      			height: 800px;
-      			color: white;
-      			padding: 20px;
-      			border-radius: 10px;
-      			text-align: center;
-    		}
-    		.image {
-    			position: relative;
-    		}
-		</style>
-	</head>
+<head>
+  <title>ECE In</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0072b1;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .register-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .register-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Connexion</h1>
+    <form>
+      <label for="username">Nom d'utilisateur ou adresse e-mail :</label>
+      <input type="text" id="username" name="username" required>
 
-	<body>
-		<div class="container">
-			<h2> Connexion</h2>
-			<form name="Connexion" onsubmit="return valider()" action="formulaire inscription.html" 	method="POST">
-				<label for="identifiant"> Nom d'utilisateur : </label>
-				<input type="text" id="identifiant" name="identifiant" required><br><br>
-				<label for="password"> Mot de passe : </label>
-				<input type="password" id="motdepasse" name="motdepasse"required><br><br>
-				<input type="submit" formaction="Page principale.html" value="Se connecter">
-				<input type="submit" formnovalidate="formulaire inscription.html"  value="S'inscrire">
-			</form>
-			<br><br><br>
-			<img src="logo grand.png" width="300", height="150" class="image">
-		</div>
-	</body>
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" formaction="Page principale.html" value="Se connecter">
+
+      <div class="register-link">
+        <span>Pas encore de compte ?</span>
+        <a href="formulaire inscription.html">Inscrivez-vous</a>
+      </div>
+    </form>
+  </div>
+</body>
 </html>
