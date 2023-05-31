@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<title> S'inscrire</title>
-		<script>
-    		function validateForm() {
-      			var username = document.forms["loginForm"]["username"].value;
-      			var password = document.forms["loginForm"]["password"].value;
-      
-      				if (username == "" || password == "") {
-        				alert("Veuillez remplir tous les champs !");
-       				return false;
-      			}
-    		}
-  		</script>
-		<style type="text/css">
-			.container {
-      			background-color:#0072b1;
-      			color: white;
-      			border: 2px solid #cccccc;
-      			height: 800px;
-      			padding: 20px;
-      			border-radius: 10px;
-      			text-align: center;
-      			justify-content: center;
-    		}
-		</style>
-	</head>
-
-	<body>
-		<div class="container">
-			<h2> Inscription</h2>
-			<form name="Annuler" onsubmit="return valider()" action="formulaire connexion.html" 	method="POST">
-				<label for="nom"> Nom : </label>
-				<input type="text" id="nom" name="nom" required><br><br>
-				<label for="prénom"> Prénom : </label>
-				<input type="text" id="prénom" name="prénom" required><br><br>
-				<label for="email"> Adresse email :</label>
-				<input type="email" id="email" name="email@gmail.com" required><br><br>
-				<label for="motDePasse"> Mot de passe :</label>
-				<input type="password" id="password" name="password" required><br><br>
-				<label for="motDePasse"> Confirmation mot de passe :</label>
-				<input type="password" id="password" name="password" required><br><br>
-				<label for="username"> Nom d'utilisateur : </label>
-				<input type="text" id="username" name="username" required><br><br>
-				<input type="submit" value="S'inscrire">
-				<input type="submit" formnovalidate="formulaire inscription.html"  value="Annuler">
-			</form>
-		</div>
-	</body>
+<head>
+  <title>S'inscrire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0072b1;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .register-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .register-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .button {
+    	position: relative;
+    	margin-left: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Inscription</h1>
+    <form>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+      <label for="prenom"> Prénom : </label>
+      <input type="text" id="prenom" name="prenom" required>
+      <label for="email"> Adresse mail : </label>
+      <input type="text" id="email" name="email" required>
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required>
+      <label for="password"> Confirmer mot de passe : </label>
+      <input type="password" id="password" name="password">
+      <input type="submit" value="S'inscrire">
+      <a class="button" href="test.html">Annuler</a>
+    </form>
+  </div>
+</body>
 </html>
 
 
