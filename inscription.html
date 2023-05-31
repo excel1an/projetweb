@@ -2,16 +2,33 @@
 <html>
 <head>
   <title>S'inscrire</title>
+  <script>
+        function validateForm() {
+            var password = document.forms["loginForm"]["password"].value;
+            var password2 = document.forms["loginForm"]["password2"].value;
+      
+              
+           if (password !== password2) {
+              alert("Les mots de passe ne correspondent pas !");
+              return false; // Empêche la soumission du formulaire si les mots de passe ne correspondent pas
+            }
+        }
+      </script>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #0072b1;
+      background-color: #edebe6;
       margin: 0;
       padding: 0;
     }
     .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       max-width: 400px;
-      margin: 100px auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
       background-color: #fff;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -56,12 +73,19 @@
     	position: relative;
     	margin-left: 50%;
     }
+    #logo {
+        
+        text-align: center;
+      }
+    #logo img {
+      height: 150px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Inscription</h1>
-    <form>
+    <form name="loginForm" onsubmit="return validateForm()" action="Accueil.html" method="POST">
       <label for="nom">Nom :</label>
       <input type="text" id="nom" name="nom" required>
       <label for="prenom"> Prénom : </label>
@@ -71,16 +95,13 @@
       <label for="password">Mot de passe :</label>
       <input type="password" id="password" name="password" required>
       <label for="password"> Confirmer mot de passe : </label>
-      <input type="password" id="password" name="password">
+      <input type="password" id="password2" name="password2">
       <input type="submit" value="S'inscrire">
-      <a class="button" href="test.html">Annuler</a>
+      <input type="button" value="Annuler" onclick="history.back()">
     </form>
+  </div>
+  <div id="logo">
+        <img src="logo grand.png" alt="Logo">
   </div>
 </body>
 </html>
-
-
-
-
-
-				
