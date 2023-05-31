@@ -5,17 +5,26 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #0072b1;
+      background-color: #edebe6;
       margin: 0;
       padding: 0;
     }
     .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       max-width: 400px;
-      margin: 100px auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
       background-color: #fff;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       padding: 20px;
+    }
+    .center-button {
+      display: block;
+      margin: 0 auto;
     }
     h1 {
       text-align: center;
@@ -52,6 +61,13 @@
       color: #007bff;
       text-decoration: none;
     }
+    #logo {
+        margin-top: 60px;
+        text-align: center;
+      }
+    #logo img {
+      height: 150px;
+    }
   </style>
 </head>
 <body>
@@ -64,13 +80,16 @@
       <label for="password">Mot de passe :</label>
       <input type="password" id="password" name="password" required>
 
-      <input type="submit" formaction="Page principale.html" value="Se connecter">
+      <input  type="submit" formaction="Page principale.html" value="Se connecter" class="center-button">
 
       <div class="register-link">
         <span>Pas encore de compte ?</span>
-        <a href="formulaire inscription.html">Inscrivez-vous</a>
+        <a href="inscription.html">Inscrivez-vous</a>
       </div>
     </form>
+  </div>
+  <div id="logo">
+        <img src="logo grand.png" alt="Logo">
   </div>
 </body>
 </html>
