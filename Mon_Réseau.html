@@ -34,6 +34,11 @@
 				color: white;
 				text-decoration: none;
 				border-radius: 10px;
+				display: flex; 
+				align-items: center;
+			}
+			#tabs a .icon {
+				margin-right: 10px; /* Espacement entre l'image et le texte */
 			}
 			.container {
 				background-color: white;
@@ -53,13 +58,22 @@
 				display: block;
 			}
 			#footer {
+				background-color: #edebe6;
+				border-top: 1px solid black;
 				position: absolute;
 				bottom: 0;
 				height: 50px;
 				width: 100%;
-				text-align: center;
-				font-size: 8px;
-				color: white;
+				color: black;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-top-left-radius: 25px; /* Coin supérieur gauche arrondi */
+				border-top-right-radius: 25px; /* Coin supérieur droit arrondi */
+			}
+			#footer img {
+				height: 50px; /* Hauteur de l'image */
+				margin-right: 10px; /* Espacement entre l'image et le texte */
 			}
 		</style>
 	</head>
@@ -67,15 +81,47 @@
 	<body>
 		<div id="header">
 			<div id="logo">
-				<img src="logo grand.png" alt="Logo">
+				<a href="Accueil.html"> <!-- Lien autour de l'image du logo -->
+					<img src="logo grand.png" alt="Logo">
+				</a>
 			</div>
 			<div id="tabs">
-				<a href="Accueil.html">Accueil</a>
-				<a href="Mon_Réseau.html">Mon Réseau</a>
-				<a href="compte.html">Vous</a>
-				<a href="Notifications.html">Notifications</a>
-				<a href="Messagerie.html">Messagerie</a>
-				<a href="Emplois.html">Emplois</a>
+				<a href="Accueil.html">
+					<span class="icon">
+						<img src="maison.png" style="width: 25px; height: 25px;">
+					</span>
+					Accueil
+				</a>
+				<a href="MonReseau.html">
+					<span class="icon">
+						<img src="reseau.png" style="width: 25px; height: 25px;">
+					</span>
+					Mon Réseau
+				</a>
+				<a href="Notifications.html">
+					<span class="icon">
+						<img src="notif.png" style="width: 25px; height: 25px;">
+					</span>
+					Notifications
+				</a>
+				<a href="Messagerie.html">
+					<span class="icon">
+						<img src="chat.png" style="width: 25px; height: 25px;">
+					</span>
+					Messagerie
+				</a>
+				<a href="Emplois.html">
+					<span class="icon">
+						<img src="job.png" style="width: 25px; height: 25px;">
+					</span>
+					Emplois
+				</a>
+				<a href="compte.html">
+					<span class="icon">
+						<img src="profil.png" style="width: 25px; height: 25px;">
+					</span>
+					Mon Profil
+				</a>
 			</div>
 		</div>
 
@@ -84,7 +130,11 @@
 		</div>
 
 		<div id="footer">
-			<h2>Droits d'auteurs : Julien SMATT et Célian GUILLAUME</h2>
-    	</div>
+			<div style="display: flex; align-items: center;">
+				<img src="logo grand.png">
+				<span style="text-align: center;">© 2023 - ECE in - <a href="https://www.google.com/maps/place/37+Quai+de+Grenelle,+75015+Paris/@48.8515004,2.2872324,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700497ee3ec5:0xdd60f514adcdb346!8m2!3d48.8515004!4d2.2872324!16s%2Fg%2F11bw3y1mf8?entry=ttu" target="_blank">37 Quai de Grenelle 75015 Paris</a>
+- Célian Guillaume / Julien Smatt</span>
+			</div>
+		</div>
     </body>
 </html>
