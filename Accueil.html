@@ -26,6 +26,7 @@
 				display: flex;
 				flex-grow: 1;
 				justify-content: center;
+				align-items: center;
 			}
 			#tabs a {
 				margin: 0 10px;
@@ -34,6 +35,11 @@
 				color: white;
 				text-decoration: none;
 				border-radius: 10px;
+				display: flex; 
+				align-items: center;
+			}
+			#tabs a .icon {
+				margin-right: 5px; /* Espacement entre l'image et le texte */
 			}
 			.container {
 				background-color: white;
@@ -53,13 +59,21 @@
 				display: block;
 			}
 			#footer {
+				background-color: beige;
 				position: absolute;
 				bottom: 0;
 				height: 50px;
 				width: 100%;
-				text-align: center;
-				font-size: 8px;
-				color: white;
+				color: black;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-top-left-radius: 20px; /* Coin supérieur gauche arrondi */
+				border-top-right-radius: 20px; /* Coin supérieur droit arrondi */
+			}
+			#footer img {
+				height: 50px; /* Hauteur de l'image */
+				margin-right: 10px; /* Espacement entre l'image et le texte */
 			}
 		</style>
 	</head>
@@ -67,28 +81,31 @@
 	<body>
 		<div id="header">
 			<div id="logo">
-				<img src="logo grand.png" alt="Logo">
+				<a href="Accueil.html"> <!-- Lien autour de l'image du logo -->
+					<img src="logo grand.png" alt="Logo">
+				</a>
 			</div>
 			<div id="tabs">
-				<a href="Accueil.html">Accueil</a>
+				<a href="Accueil.html">
+					<span class="icon">
+						<img src="maison.png" style="width: 20px; height: 20px;">
+					</span>
+					Accueil
+				</a>
 				<a href="Mon_Réseau.html">Mon Réseau</a>
 				<a href="compte.html">Vous</a>
 				<a href="Notifications.html">Notifications</a>
 				<a href="Messagerie.html">Messagerie</a>
 				<a href="Emplois.html">Emplois</a>
-			</div>
+				</div>
 		</div>
 
 		<div class="container">
 			
 		</div>
-
-		<div id="section">
-			<h2>SECTION</h2>
-		</div>
-
 		<div id="footer">
-			<h2>Droits d'auteurs : Julien SMATT et Célian GUILLAUME</h2>
-    	</div>
+			<img src="logo grand.png">
+			<span style="flex-grow: 1; text-align: center;">© Copyright 2023 - ECE in - Célian Guillaume</span>
+		</div>
     </body>
 </html>
