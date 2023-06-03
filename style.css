@@ -1,15 +1,21 @@
 body {
-	height: 300px;
+	height: 800px;
 	background-color: #edebe6;
 	margin: 0;
+	margin-bottom: 90px;
+	position:absolute;
 }
 
 header {
+	margin-top: 50px;
 	color: white;
 	height: 70px;
 	display: flex;
 	align-items: center;
 	padding: 0 20px;
+}
+span{
+	text-decoration: none;
 }
 
 #logo {
@@ -20,6 +26,11 @@ header {
 	height: 70px;
 }
 
+#search-bar{
+	align-items: right;
+	padding: 20px;
+	color: #0B717A;
+}
 #tabs {
 	display: flex;
 	flex-grow: 1;
@@ -28,25 +39,35 @@ header {
 }
 
 #tabs a {
-	margin: 0 10px;
+	margin:  50px;
 	padding: 10px;
 	background-color: #0B717A;
 	color: white;
 	text-decoration: none;
-	border-radius: 10px;
+	border-radius: 20px;
+	display: flex; 
+	align-items: center;
+	margin-top: 50px;
+}
+#tabs a:hover{
+	margin: 0 10px;
+	padding: 20px;
+	background-color: white;
+	color: #0B717A;
+	text-decoration: none;
+	border-radius: 20px;
 	display: flex; 
 	align-items: center;
 }
 
-#tabs a .icon {
-	margin-right: 10px;
-}
+
 
 
 .container {
 	position: relative;
 }
 .container2 {
+	margin-top: 100px;
 	background-color: white;
 	padding: 20px;
 	border-radius: 10px;
@@ -59,9 +80,8 @@ header {
 	padding: 50px;
 	border-radius: 20px;
 	text-align: center;
-	min-height: calc(100% - 50px);
-	width: 200px;
-	height: 300px;
+	width: 300px;
+	height: 600px;
 	float: left;
 	position: relative;
 	top: 50px;
@@ -73,9 +93,8 @@ header {
 	padding: 50px;
 	border-radius: 20px;
 	text-align: center;
-	min-height: calc(100% - 50px);
-	width: 200px;
-	height: 300px;
+	width: 300px;
+	height: 200px;
 	float: right;
 	position: relative;
 	top: 50px;
@@ -105,10 +124,11 @@ header {
 	margin: 1%;
 }
 
+
 #footer {
 	background-color: #edebe6;
 	border-top: 1px solid black;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	height: 50px;
 	width: 100%;
@@ -118,6 +138,7 @@ header {
 	justify-content: center;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
+	margin-top: 100px;
 }
 
 #footer img {
