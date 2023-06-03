@@ -40,12 +40,33 @@
 			#tabs a .icon {
 				margin-right: 10px; /* Espacement entre l'image et le texte */
 			}
+			.container1 {
+				background-color: #edebe6;
+				border-radius: 30px;
+				text-align: center;
+				border: 2px solid black;
+				height: 500px;
+				margin: 25%;
+				width: 600px;
+			}
 			.container {
 				background-color: white;
+				border-radius: 20px;
+				border: 2px solid black;
+				width: 90%;
+				height: 50px;
+				margin: 4%;
+				position: relative;
+				top: ;
+			}
+			#section {
+				background-color: #edebe6;
 				padding: 20px;
-				border-radius: 10px;
+				height: 500px;
 				text-align: center;
 				min-height: calc(100% - 50px);
+				align-items: center;
+				display: flex;
 			}
 			.button {
 				width: 200px;
@@ -124,9 +145,22 @@
 				</a>
 			</div>
 		</div>
-
-		<div class="container">
-			
+		<div id="section">
+			<div class="container1">
+				<p> Notifications</p>
+				<form id="search-form">  				
+					<input type="text" name="query" placeholder="Rechercher..." />		
+					<button type="submit">Rechercher</button>
+				</form>
+				<div class="container">
+					
+				</div>
+				<div class="container"></div>
+				<div class="container"></div>
+				<div class="container"></div>
+				<div class="container"></div>
+				<br>
+			</div>
 		</div>
 
 		<div id="footer">
@@ -136,5 +170,4 @@
 - Célian Guillaume / Julien Smatt</span>
 			</div>
 		</div>
-    </body>
-</html>
+    </body
