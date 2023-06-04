@@ -1,0 +1,388 @@
+// COMMUN A TOUTES LES PAGES
+
+body {
+	height: 300px;
+	background-color: #edebe6;
+	margin: 0;
+}
+#header {
+	color: white;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+#logo {
+	margin-right: 15px;
+}
+#logo img {
+	height: 70px;
+}
+#tabs {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+}
+#tabs a {
+	margin: 0 10px;
+	padding: 10px;
+	background-color: #0B717A;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	display: flex; 
+	align-items: center;
+}
+#tabs a .icon {
+	margin-right: 10px; /* Espacement entre l'image et le texte */
+}
+#footer {
+	background-color: #edebe6;
+	border-top: 1px solid black;
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top-left-radius: 25px; /* Coin supérieur gauche arrondi */
+	border-top-right-radius: 25px; /* Coin supérieur droit arrondi */
+	float: left;
+}
+#footer img {
+	height: 50px; /* Hauteur de l'image */
+	margin-right: 10px; /* Espacement entre l'image et le texte */
+}
+
+// EMPLOIS
+
+#nav_Emplois {
+	float: left;
+	border-radius: 10px;
+	margin: 1%;
+	border: 2px solid black;
+	height: 200px;
+	width: 100px;
+}
+#section_Emplois {
+	background-color: #edebe6;
+	padding: 20px;
+	height: 500px;
+	text-align: center;
+	min-height: calc(100% - 50px);
+	align-items: center;
+	display: flex;
+}
+			
+.container_Emplois {
+	background-color: white;
+	padding: 20px;
+	border-radius: 30px;
+	text-align: center;
+	min-height: calc(70% - 50px);
+	border: 2px solid black;
+	width: 200px;
+	position: relative;
+	top: 10px;
+}
+.container1_Emplois {
+	background-color: white;
+	border-radius: 30px;
+	text-align: center;
+	border: 2px solid black;
+	height: 500px;
+	margin: 20%;
+	width: 600px;
+	position: relative;
+	top: 10px;
+}
+.container1 input_Emplois{
+	width: 90%;
+	position: relative;
+	top: 10px;
+}
+.container1 button_Emplois {
+	position: relative;
+	top: 20px;
+}
+.button_Emplois {
+	width: 200px;
+	padding: 10px;
+	margin: 10px auto;
+	background-color: #0B717A;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	display: block;
+}
+
+
+//Compte
+
+.container_Compte {
+	background-color: white;
+	color: black;
+	padding: 20px;
+	border-radius: 30px;
+	text-align: center;
+	height: 500px;
+	border: 2px solid black;
+}
+.container img_Compte {
+	border-radius: 90%;
+	width: 100px;
+	height: 100px;
+}
+.container1_Compte {
+	display: flex;
+}
+.container2_Compte {
+	display: flex;
+}
+.container3_Compte {
+	border: 2px solid black;
+	border-radius: 20px;
+}
+.button1_Compte {
+	width: 200px;
+    padding: 10px;
+    float: right;
+    position: relative;
+    left: 767px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.button_Compte {
+	width: 200px;
+    padding: 10px;
+    float: right;
+    position: relative;
+    left: 850px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid black;
+	}
+#nav_Compte {
+	font-size: 15px;
+	color: white;
+	margin: 1%;		
+}
+#section_Compte {
+	font-size: 15px;
+	color: white;
+	margin: 1%;
+}
+
+// Mon Réseau
+
+#section_MonRéseau {
+	background-color: #edebe6;
+	padding: 20px;
+	height: 500px;
+	text-align: center;
+	min-height: calc(100% - 50px);
+	align-items: center;
+	display: flex;
+}		
+.container_MonRéseau {
+	background-color: white;
+	padding: 20px;
+	border-radius: 30px;
+	text-align: center;				
+	height: 350px;
+	border: 2px solid black;
+	width: 250px;
+	position: relative;
+	top: 10px;
+}
+.container1_MonRéseau {
+	background-color: white;
+	border-radius: 30px;
+	text-align: center;
+	border: 2px solid black;
+	height: 500px;
+	margin: 20%;
+	width: 700px;
+	position: relative;
+	top: 10px;
+}
+.container1 input_MonRéseau {
+	width: 90%;
+	position: relative;
+	top: 10px;
+}
+.container1 button_MonRéseau {
+	position: relative;
+	top: 20px;
+}
+.button_MonRéseau {
+	width: 200px;
+	padding: 10px;
+	margin: 10px auto;
+	background-color: #0B717A;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	display: block;
+}
+
+// NOTIFICATIONS
+
+.container1_Notifications {
+	background-color: #edebe6;
+	border-radius: 30px;
+	text-align: center;
+	border: 2px solid black;
+	height: 500px;
+	margin: 25%;
+	width: 600px;
+}
+.container_Notifications {
+	background-color: white;
+	border-radius: 20px;
+	border: 2px solid black;
+	width: 90%;
+	height: 50px;
+	margin: 4%;
+	position: relative;
+}
+#section_Notifications {
+	background-color: #edebe6;
+	padding: 20px;
+	height: 500px;
+	text-align: center;
+	min-height: calc(100% - 50px);
+	align-items: center;
+	display: flex;
+}
+.button_Notifications {
+	width: 200px;
+	padding: 10px;
+	margin: 10px auto;
+	background-color: #0B717A;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	display: block;
+}
+
+// ACCUEIL 
+
+#section_Accueil {
+	background-color: #edebe6;
+	padding: 20px;
+	height: 500px;
+	text-align: center;
+	min-height: calc(100% - 50px);
+	align-items: center;
+	display: flex;
+}
+.container_Accueil {
+	background-color: white;
+	padding: 20px;
+	border-radius: 30px;
+	text-align: center;
+	height: 400px;
+	border: 2px solid black;
+	width: 250px;
+	position: relative;
+	top: 5px;
+	float: left;
+}
+.container img_Accueil {
+	border-radius: 40%;
+}
+.container1_Accueil {
+	background-color: white;
+	border-radius: 30px;
+	text-align: center;
+	align-items: center;
+	height: 500px;
+	margin: 20%;
+	width: 800px;
+	position: relative;
+	top: 10px;
+}
+.container2_Accueil {
+	background-color: #0B717A;
+	border-radius: 20px;
+	width: 90%;
+	margin: 4%;
+	color: white;
+	height: 75px;
+}
+.container3_Accueil {
+	background-color: #0B717A;
+	border-radius: 20px;
+	width: 90%;
+	margin: 4%;
+	color: white;
+	height: 250px;
+}
+.container4_Accueil {
+	background-color: white;
+	padding: 20px;
+	border-radius: 30px;
+	text-align: center;
+	height: 400px;
+	border: 2px solid black;
+	width: 300px;
+	position: relative;
+	top: 5px;
+	float: left;
+}
+.container5_Accueil {
+	background-color: white;
+	padding: 20px;
+	border-radius: 30px;
+	text-align: center;
+	height: 50px;
+	border: 2px solid black;
+	width: 100px;			
+}
+.container3 p_Accueil {
+	position: relative;
+	top: 10px;
+}
+.container2 p_Accueil {
+	position: relative;
+	top: 5px;
+}
+#map  iframe_Accueil {
+	width: 200px;
+	height: 200px;
+}
+#nav_Accueil {
+	align-items: center;
+	position: relative;
+}
+.button_Accueil {
+	width: 200px;
+	padding: 10px;
+	margin: 10px auto;
+	background-color: #0B717A;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	display: block;
+}
+.button1_Accueil {
+	width: 1000px;
+	height: 100px;
+	background-color: #0B717A;
+	color: white;
+	border-radius: 10px;
+	position: relative;
+	top: 10px;			
+}
+.button1 a_Accueil {
+	position: relative;
+	top: 10px;
+}
