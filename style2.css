@@ -386,3 +386,55 @@ body {
 	position: relative;
 	top: 10px;
 }
+
+// MODIFIER PROFIL
+
+body_ModifierProfil {
+      font-family: Arial, sans-serif;
+      background-color: #edebe6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .profile-container_ModifierProfil {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .form-group_ModifierProfil {
+      margin-bottom: 20px;
+    }
+
+    .form-group label_ModifierProfil {
+      display: block;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea_ModifierProfil {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .form-group textarea_ModifierProfil {
+      height: 100px;
+    }
+
+    .form-group input[type="submit"]_ModifierProfil {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .button_ModifierProfil {
+      position: relative;
+      margin-left: 30%;
+    }
