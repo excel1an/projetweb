@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Notifications</title>
+		<style type="text/css">
+			body {
+				height: 300px;
+				background-color: #edebe6;
+				margin: 0;
+			}
+			#header {
+				color: white;
+				height: 70px;
+				display: flex;
+				align-items: center;
+				padding: 0 20px;
+			}
+			#logo {
+				margin-right: 15px;
+			}
+			#logo img {
+				height: 70px;
+			}
+			#tabs {
+				display: flex;
+				flex-grow: 1;
+				justify-content: center;
+			}
+			#tabs a {
+				margin: 0 10px;
+				padding: 10px;
+				background-color: #0B717A;
+				color: white;
+				text-decoration: none;
+				border-radius: 10px;
+				display: flex; 
+				align-items: center;
+			}
+			#tabs a .icon {
+				margin-right: 10px; /* Espacement entre l'image et le texte */
+			}
+			.container1 {
+				background-color: #edebe6;
+				border-radius: 30px;
+				text-align: center;
+				border: 2px solid black;
+				height: 500px;
+				margin: 25%;
+				width: 600px;
+			}
+			.container {
+				background-color: white;
+				border-radius: 20px;
+				border: 2px solid black;
+				width: 90%;
+				height: 50px;
+				margin: 4%;
+				position: relative;
+			}
+			#section {
+				background-color: #edebe6;
+				padding: 20px;
+				height: 500px;
+				text-align: center;
+				min-height: calc(100% - 50px);
+				align-items: center;
+				display: flex;
+			}
+			.button {
+				width: 200px;
+				padding: 10px;
+				margin: 10px auto;
+				background-color: #0B717A;
+				color: white;
+				text-decoration: none;
+				border-radius: 10px;
+				display: block;
+			}
+			#footer {
+				background-color: #edebe6;
+				border-top: 1px solid black;
+				position: absolute;
+				bottom: 0;
+				height: 50px;
+				width: 100%;
+				color: black;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-top-left-radius: 25px; /* Coin supérieur gauche arrondi */
+				border-top-right-radius: 25px; /* Coin supérieur droit arrondi */
+			}
+			#footer img {
+				height: 50px; /* Hauteur de l'image */
+				margin-right: 10px; /* Espacement entre l'image et le texte */
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+			<div id="logo">
+				<a href="Accueil.html"> <!-- Lien autour de l'image du logo -->
+					<img src="logo grand.png" alt="Logo">
+				</a>
+			</div>
+			<div id="tabs">
+				<a href="Accueil.html">
+					<span class="icon">
+						<img src="maison.png" style="width: 25px; height: 25px;">
+					</span>
+					Accueil
+				</a>
+				<a href="MonReseau.html">
+					<span class="icon">
+						<img src="reseau.png" style="width: 25px; height: 25px;">
+					</span>
+					Mon Réseau
+				</a>
+				<a href="Notifications.html">
+					<span class="icon">
+						<img src="notif.png" style="width: 25px; height: 25px;">
+					</span>
+					Notifications
+				</a>
+				<a href="Messagerie.html">
+					<span class="icon">
+						<img src="chat.png" style="width: 25px; height: 25px;">
+					</span>
+					Messagerie
+				</a>
+				<a href="Emplois.html">
+					<span class="icon">
+						<img src="job.png" style="width: 25px; height: 25px;">
+					</span>
+					Emplois
+				</a>
+				<a href="compte.html">
+					<span class="icon">
+						<img src="profil.png" style="width: 25px; height: 25px;">
+					</span>
+					Mon Profil
+				</a>
+			</div>
+		</div>
+		<div id="section">
+			<div class="container1">
+				<p> Notifications</p>
+				<form id="search-form">  				
+					<input type="text" name="query" placeholder="Rechercher..." />		
+					<button type="submit">Rechercher</button>
+				</form>
+				<div class="container">
+					
+				</div>
+				<div class="container"></div>
+				<div class="container"></div>
+				<div class="container"></div>
+				<div class="container"></div>
+				<br>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div style="display: flex; align-items: center;">
+				<img src="logo grand.png">
+				<span style="text-align: center;">© 2023 - ECE in - <a href="https://www.google.com/maps/place/37+Quai+de+Grenelle,+75015+Paris/@48.8515004,2.2872324,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700497ee3ec5:0xdd60f514adcdb346!8m2!3d48.8515004!4d2.2872324!16s%2Fg%2F11bw3y1mf8?entry=ttu" target="_blank">37 Quai de Grenelle 75015 Paris</a>
+- Célian Guillaume / Julien Smatt</span>
+			</div>
+		</div>
+    </body>
+</html>
