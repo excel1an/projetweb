@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversation</title>
+  <style>
+    /* Styles CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .conversation-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .message {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .sender {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .message-content {
+      margin-top: 5px;
+    }
+
+    .user-message {
+      background-color: #e1f5fe;
+    }
+
+    .contact-message {
+      background-color: #f1f1f1;
+    }
+
+    .input-container {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .input-container input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .input-container input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="conversation-container">
+    <div class="message user-message">
+      <span class="sender">Utilisateur :</span>
+      <div class="message-content">
+        Bonjour, comment ça va ?
+      </div>
+    </div>
+
+    <div class="message contact-message">
+      <span class="sender">Contact :</span>
+      <div class="message-content">
+        Salut ! Je vais bien, merci. Et toi ?
+      </div>
+    </div>
+
+    <!-- Ajoutez d'autres messages ici -->
+
+    <div class="input-container">
+      <input type="text" id="message-input" placeholder="Saisissez votre message...">
+      <input type="submit" value="Envoyer" onclick="sendMessage()">
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      var messageInput = document.getElementById('message-input');
+      var messageText = messageInput.value;
+
+      if (messageText.trim() !== '') {
+        var messageContainer = document.createElement('div');
+        messageContainer.classList.add('message', 'user-message');
+
+        var senderSpan = document.createElement('span');
+        senderSpan.classList.add('sender');
+        senderSpan.textContent = 'Utilisateur :';
+
+        var messageContent = document.createElement('div');
+        messageContent.classList.add('message-content');
+        messageContent.textContent = messageText;
+
+        messageContainer.appendChild(senderSpan);
+        messageContainer.appendChild(messageContent);
+
+        var conversationContainer = document.querySelector('.conversation-container');
+        var inputContainer = document.querySelector('.input-container');
+
+        conversationContainer.insertBefore(messageContainer, inputContainer);
+
+        messageInput.value = '';
+      }
+    }
+  </script>
+</body>
+</html>
